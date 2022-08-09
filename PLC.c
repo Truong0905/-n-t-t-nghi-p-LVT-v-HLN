@@ -28,11 +28,6 @@ int main(void)
 
     // 2.4Tách nhánh
     SplitBranch();
-    while (p)
-    {
-        printf("\"%s\" ;", p->data);
-        p = p->next;
-    }
     // 3 .Tao file DataPLC.c với các thành phần phụ trợ
     FileData();
 
