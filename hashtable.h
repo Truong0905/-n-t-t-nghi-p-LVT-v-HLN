@@ -3,15 +3,17 @@
 
 #include"STL.h"
 
-#define sizeOfHash ((int)15)
-#define PrimeNumber ((int)151)
-typedef char stringHashTable[sizeOfHash] ;
+#define SIZE_OF_HASH_TABLE ((int)15)
 
+#define H_PRIMER_NUMBER ((int)151)
+
+typedef char stringHashTable[SIZE_OF_HASH_TABLE] ;
+
+void H_InitSaveDataIO(void);
 int H_HashFunction (stringHashTable node) ;
 void H_ProbeFunction ( stringHashTable node , int *StopPosition , int *FirstInsert ) ;
 void H_InsertFunction(stringHashTable node) ;
 int H_FindFunction(stringHashTable node) ;
 
-extern stringHashTable SaveIO[PrimeNumber] ;
 
 #endif  // _HASHTABLE_
