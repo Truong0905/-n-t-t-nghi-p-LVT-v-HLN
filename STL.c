@@ -33,7 +33,7 @@
 
 static LinkList *First, *Last, *FirstFinal, *LastFinal; // First và Last dùng cho  TransferToList ()   ; FirstFinal , LastFinal  là chuỗi cuối cùng cần tìm
 static FILE *pFileTimer = NULL;
-static  CountTimer = 0;
+static int CountTimer = 0;
 extern stringHashTable g_Save_IO[H_PRIMER_NUMBER];
 
 /*******************************************************************************
